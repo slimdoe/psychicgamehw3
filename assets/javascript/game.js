@@ -28,15 +28,15 @@ $("#guess-image").html(
     $("#losses").html("<h3>" + losses + "</h3>");
   }
 }
-$("#heads").on("click", function() {
-    headsCount++;
-    $("#heads-chosen").text(headsCount);
+$("#thumbUp").on("click", function() {
+    thumbUp++;
+    $("#thumbUp").text(thumbUp);
     $("#guess").html("<b>Heads</b>");
     flipThatCoin(0);
   });
-  $("#tails").on("click", function() {
-    tailsCount++;
-    $("#tails-chosen").text(tailsCount);
+  $("#thumbdown").on("click", function() {
+    thumbDown++;
+    $("#thumpDown").text(thumbDown);
     $("#guess").html("<b>Tails</b>");
     flipThatCoin(1);
   });
